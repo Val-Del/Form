@@ -1,11 +1,76 @@
+@charset "utf-8";
+
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+div, header, nav, article, section, aside, footer, h1, h2, h3, h4, h5, h6, p, a, ul, li, figure, figcaption, class, img { 
+	margin: 0;
+	padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+img, object, embed, canvas, video, audio, picture, svg {
+	max-width: 100%;
+	height: auto;
+}
+li {
+    list-style-type: none;
+}
+
+body {
+    margin: 0px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.center {
+    width: 70%;
+    margin: 0 auto;
+}
+a {
+
+  text-decoration: none; 
+}
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
 main {
     background-color: aquamarine;
-    width: 300px;
+    width: 320px;
     padding: 30px;
     margin: 50px;
 }
 h1 {
     font-size: 30px;
     color: rgb(96, 96, 246);
+    padding-bottom: 15px;
+    text-align: center;
 }
-
+form p {
+    width: 75px;
+    padding: 5px 0;
+    display: inline-block;
+}
+form input {  
+    
+    &:nth-of-type(6) {
+        display: block;
+        text-align: center;
+        width: 100%;
+        min-height: 30px;
+        
+    }
+}
+footer {
+    
+    margin-top: 25px;
+    text-align: center;
+}
