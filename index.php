@@ -4,31 +4,46 @@
     ?>
 <body>
 <main>
-<?php
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/diablo" alt="Card image cap">
+  <div class="card-body">
+    <?php
 
 
 $diablo = array('nom:' => 'diablo3',
 'développeur:'=>'blizzard',
 'date:'=>'2012',
 'platform:' => 'multi');
-
+foreach($diablo as $x => $x_value) {
+  echo $x ." " . $x_value . "<br>";
+}
+echo "<br>";
+?>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/hs" alt="Card image cap">
+  <div class="card-body">
+  <?php
 
 $hearthstone = array('nom:' => 'hearthstone',
 'développeur:'=>'blizzard',
 'date:'=>'2014',
 'platform:' => 'multi');
-foreach($diablo as $x => $x_value) {
-  echo $x ." " . $x_value . "<br>";
-}
-echo "<br>";
+
 
 foreach($hearthstone as $x => $x_value) {
   echo $x ." " . $x_value . "<br>";
 }
-
-// echo "Diablo date de " . $diablo['date'];
-
 ?>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+
 <br>
 <?php 
 $testprint = "on s'amuse avec print";
