@@ -4,7 +4,79 @@
     ?>
 <body>
 <main>
+<?php
 
+
+$diablo = array('nom:' => 'diablo3',
+'développeur:'=>'blizzard',
+'date:'=>'2012',
+'platform:' => 'multi');
+
+
+$hearthstone = array('nom:' => 'hearthstone',
+'développeur:'=>'blizzard',
+'date:'=>'2014',
+'platform:' => 'multi');
+foreach($diablo as $x => $x_value) {
+  echo $x ." " . $x_value . "<br>";
+}
+echo "<br>";
+
+foreach($hearthstone as $x => $x_value) {
+  echo $x ." " . $x_value . "<br>";
+}
+
+// echo "Diablo date de " . $diablo['date'];
+
+?>
+<br>
+<?php 
+$testprint = "on s'amuse avec print";
+print_r ($testprint);
+
+?>
+
+<br>
+<?php
+$testimplode = array('on','implode','mot');
+echo implode("espace", $testimplode);
+?>
+
+<br>
+
+<?php 
+$premiermot = "ajoute";
+$secondemot = "sprintf";
+$txtentier = sprintf("on %s des mots avec la function %s", $premiermot, $secondemot);
+echo $txtentier;
+
+
+?>
+
+<br>
+
+<?php
+
+echo date("H \h\ i \m\ s");
+
+?>
+<br>
+<!-- <?php
+$stagiairesnoms = array('valentin', 'Anne', 'JR', 'JB','yulliah', 'Omar');
+echo $stagiairenoms [array_rand($stagiairesnoms)];
+?> -->
+
+<br>
+<?php
+echo (rand(1,100));
+?>
+<br>
+<?php
+$longueurstr = "c'est bien long";
+echo strlen($longueurstr);
+
+?>
+<br>
 
 <a href="index.php?add"><button>afficher formulaire</button></a>
 <?php if(isset($_GET['add'])) {
